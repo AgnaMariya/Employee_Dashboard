@@ -1,0 +1,219 @@
+:root {
+  font-family: Inter, "Segoe UI", sans-serif;
+  color: #e5e7eb;
+  background: #0f0c1b;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #0f0c1b;
+  color: #e5e7eb;
+}
+
+/* Navbar */
+.navbar {
+  background: #15102a !important;
+  border-bottom: 1px solid #2d2250;
+  padding: 16px 7%;
+}
+
+.navbar .navbar-brand {
+  color: #ffffff !important;
+  font-weight: 650;
+  letter-spacing: -0.4px;
+  margin-right: auto;
+  margin-left: 15px;
+}
+
+.navbar .navbar-nav {
+  margin-right: 12px;
+}
+
+.navbar .nav-link {
+  color: #9ca3af !important;
+  margin-left: 12px;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #818cf8 !important;
+}
+
+/* Main content */
+.container {
+  max-width: 1120px;
+  padding-top: 28px;
+  padding-bottom: 48px;
+}
+
+h2 {
+  color: #f3f4f6;
+  font-weight: 650;
+  letter-spacing: -0.7px;
+  font-size: 28px;
+}
+
+/* Dashboard table and cards */
+.table-responsive,
+.card {
+  background: #1c1635;
+  color: #e5e7eb;
+  border: 1px solid #2d2250;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table {
+  margin-bottom: 0;
+  vertical-align: middle;
+  --bs-table-bg: #1c1635;
+  --bs-table-color: #e5e7eb;
+  --bs-table-border-color: #2d2250;
+  --bs-table-striped-bg: #231c42;
+  --bs-table-striped-color: #e5e7eb;
+  --bs-table-hover-bg: #2e2554;
+  --bs-table-hover-color: #ffffff;
+}
+
+/* Table headings */
+.table thead.table-dark th {
+  background: #15102a !important;
+  color: #c7d2fe !important;
+  border-color: #2d2250;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 15px 18px;
+}
+
+.table td {
+  color: #e5e7eb;
+  border-color: #2d2250;
+  padding: 14px 18px;
+  font-size: 14px;
+}
+
+/* Striped rows */
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: #231c42;
+  color: #e5e7eb;
+}
+
+/* Hover effect */
+.table-hover > tbody > tr:hover > * {
+  background-color: #2e2554;
+  color: #ffffff;
+}
+
+/* Employee form card */
+.card {
+  padding: 24px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Form labels */
+.form-label {
+  color: #d1d5db;
+  font-weight: 550;
+  font-size: 14px;
+}
+
+/* Text boxes and number inputs */
+.form-control {
+  background: #0f0c1b;
+  color: #f3f4f6;
+  border: 1px solid #372e5c;
+  border-radius: 7px;
+  padding: 11px 12px;
+  font-size: 14px;
+}
+
+.form-control::placeholder {
+  color: #6b7280;
+}
+
+.form-control:focus {
+  background: #0f0c1b;
+  color: #f3f4f6;
+  border-color: #818cf8;
+  box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.2);
+}
+
+.form-control:disabled {
+  background: #18132e;
+  color: #9ca3af;
+}
+
+/* Primary button */
+.btn-primary {
+  background: #6366f1;
+  border-color: #6366f1;
+  color: #ffffff;
+  border-radius: 7px;
+  padding: 11px 18px;
+  font-weight: 550;
+}
+
+.btn-primary:hover {
+  background: #4f46e5;
+  border-color: #4f46e5;
+  color: #ffffff;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+}
+
+/* Successful form submission message */
+.alert-success {
+  background: #162a22;
+  border-color: #21523f;
+  color: #a7f3d0;
+  border-radius: 10px;
+}
+
+.alert-success h5 {
+  color: #6ee7b7;
+}
+
+/* Error and loading messages */
+.text-danger {
+  color: #fca5a5 !important;
+}
+
+/* Responsive layout */
+@media (max-width: 576px) {
+  .container {
+    padding-top: 22px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .table td,
+  .table thead.table-dark th {
+    padding: 12px;
+  }
+
+  .navbar {
+    padding: 14px 4%;
+  }
+}
